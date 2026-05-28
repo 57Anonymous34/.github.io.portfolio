@@ -2,78 +2,138 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Amar Jashari</title>
+    <title>Amar Jashari | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="name">Amar Jashari</div>
+<header>
+    <div class="logo">Amar Jashari</div>
 
-        <nav>
-            <a href="#about">Über mich</a>
-            <a href="#projects">Projekte</a>
-            <a href="#contact">Kontakt</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="#about">Über mich</a>
+        <a href="#projects">Projekte</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hallo, ich bin Amar</h1>
+<section class="hero">
+    <div class="hero-text">
+        <p class="tag">IMS-Schüler · Webentwicklung · Programmierung</p>
+
+        <h1>Hallo, ich bin Amar.</h1>
+
+        <p>
+            Ich interessiere mich für moderne Webseiten, Softwareprojekte
+            und kreative Lösungen im Informatikbereich.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects">Meine Projekte</a>
+            <a href="Bewerbungsunterlagen_Amar_Jashari.pdf" target="_blank" class="second-btn">
+                CV herunterladen
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="image-placeholder">Bild von mir</div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>Über mich</h2>
+
+    <p>
+        Ich besuche die Informatikmittelschule und arbeite gerne an praktischen
+        Projekten. Besonders spannend finde ich Webentwicklung, Programmierung
+        und das Umsetzen eigener Ideen.
+    </p>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Meine Projekte</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Crypto Website</h3>
+
+            <img src="Krypto.png" alt="Crypto Website Screenshot">
+
             <p>
-                Motivierter IMS-Schüler mit Interesse an Programmierung,
-                Webentwicklung und modernen Technologien.
+                Eine Webseite, auf der Kryptowährungen angezeigt werden.
+                Mit Suchfunktion, Diagrammen und Daten von einer API.
             </p>
-        </div>
-    </section>
 
-    <section id="about" class="about">
-        <div class="about-text">
-            <h2>Text über mich</h2>
+            <a href="https://github.com/57Anonymous34/Lernperiode-7" target="_blank">
+                Projekt ansehen
+            </a>
+        </div>
+
+        <div class="project-card">
+            <h3>Save the Ball</h3>
+
+            <img src="SaveTheBAll.png" alt="Save the Ball Screenshot">
+
             <p>
-                Ich besuche die Informatikmittelschule und interessiere mich
-                für Webentwicklung, Softwareprojekte und neue Technologien.
+                Ein kleines Spiel mit Lua und LÖVE2D. Ziel ist es,
+                Hindernissen auszuweichen und einen möglichst hohen Score zu erreichen.
             </p>
-            <a href="#" class="cv-button">CV herunterladen</a>
-        </div>
-    </section>
 
-    <section id="projects" class="projects">
-        <div class="project-card">
-            <h2>Projekt 1</h2>
+            <a href="https://github.com/57Anonymous34/Lernperiode-9" target="_blank">
+                Projekt ansehen
+            </a>
         </div>
 
         <div class="project-card">
-            <h2>Projekt 2</h2>
+            <h3>AutoWelt</h3>
+
+            <img src="Autowelt.png" alt="AutoWelt Screenshot">
+
+            <p>
+                Eine responsive HTML/CSS-Webseite mit moderner Benutzeroberfläche
+                und Markenübersicht für verschiedene Autos. Veröffentlicht mit Netlify.
+            </p>
+
+            <a href="https://autowelt34.netlify.app/" target="_blank">
+                Projekt ansehen
+            </a>
         </div>
 
         <div class="project-card">
-            <h2>Projekt 3</h2>
+            <h3>GamersParadise</h3>
+
+            <img src="Startseite.png" alt="GamersParadise Screenshot">
+
+            <p>
+                Eine Desktop-App mit verschiedenen Spielen wie TicTacToe
+                und Snake. Der Benutzer kann Spiele auswählen, Punkte sammeln
+                und jederzeit ins Menü zurückkehren.
+            </p>
+
+            <a href="https://github.com/57Anonymous34/Lernperiode-4" target="_blank">
+                Projekt ansehen
+            </a>
         </div>
-    </section>
 
-    <section id="contact" class="contact">
-        <h2>Kontakt</h2>
+    </div>
+</section>
 
-        <div class="contact-info">
-            <div>
-                <p>Telefon:</p>
-                <p>---</p>
-                <p>E-Mail:</p>
-                <p>---</p>
-            </div>
+<section id="contact" class="contact">
+    <h2>Kontakt</h2>
 
-            <div>
-                <p>GitHub:</p>
-                <p>---</p>
-            </div>
+    <div class="contact-boxes">
+        <a href="https://github.com/57Anonymous34" target="_blank">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">E-Mail</a>
+        <a href="Bewerbungsunterlagen_Amar_Jashari.pdf" target="_blank">CV</a>
+    </div>
+</section>
 
-            <div>
-                <p>LinkedIn:</p>
-                <p>---</p>
-            </div>
-        </div>
-    </section>
+<footer>
+    <p>© 2026 Amar Jashari</p>
+</footer>
 
 </body>
 </html>
