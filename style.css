@@ -14,7 +14,10 @@ body {
     color: #18392b;
 }
 
-/* NAVIGATION */
+/* =======================
+   NAVIGATION
+======================= */
+
 header {
     height: 80px;
     background-color: #0f2f24;
@@ -25,32 +28,35 @@ header {
     padding: 0 70px;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #f4efe6;
 }
 
 nav a {
-    color: #f4efe6;
+    color: white;
     text-decoration: none;
     margin-left: 30px;
     font-size: 17px;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #d8c3a5;
 }
 
-/* HERO */
+/* =======================
+   HERO
+======================= */
+
 .hero {
-    min-height: 600px;
+    min-height: 650px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 80px 120px;
     background: linear-gradient(135deg, #f4efe6, #ffffff);
 }
@@ -75,7 +81,6 @@ nav a:hover {
 .hero p {
     font-size: 21px;
     line-height: 1.6;
-    color: #294b3a;
 }
 
 .hero-buttons {
@@ -84,13 +89,14 @@ nav a:hover {
 
 .hero-buttons a {
     display: inline-block;
+    text-decoration: none;
     background-color: #0f2f24;
     color: white;
     padding: 14px 26px;
     border-radius: 30px;
-    text-decoration: none;
     margin-right: 15px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .hero-buttons a:hover {
@@ -106,9 +112,9 @@ nav a:hover {
 .hero-card {
     width: 330px;
     height: 400px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 30px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,21 +129,23 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0f2f24;
     font-weight: bold;
 }
 
-/* ABOUT */
+/* =======================
+   ABOUT
+======================= */
+
 .about {
     padding: 90px 160px;
-    background-color: #ffffff;
+    background-color: white;
     text-align: center;
 }
 
 .about h2,
 .projects h2,
 .contact h2 {
-    font-size: 42px;
+    font-size: 48px;
     margin-bottom: 25px;
     color: #0f2f24;
 }
@@ -146,31 +154,35 @@ nav a:hover {
     max-width: 850px;
     margin: auto;
     font-size: 20px;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
-/* PROJECTS */
+/* =======================
+   PROJECTS
+======================= */
+
 .projects {
     padding: 90px 100px;
     background-color: #f4efe6;
     text-align: center;
 }
 
-
 .project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 35px;
-    margin-top: 45px;
+    margin-top: 50px;
 }
 
 .project-card {
     background-color: white;
-    padding: 35px;
     border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.10);
-    text-align: left;
+    padding: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -178,27 +190,50 @@ nav a:hover {
 }
 
 .project-card h3 {
-    font-size: 26px;
-    margin-bottom: 15px;
+    font-size: 30px;
     color: #0f2f24;
+    margin-bottom: 15px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
 }
 
 .project-card p {
     font-size: 17px;
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 25px;
+    flex-grow: 1;
 }
 
 .project-card a {
-    color: #0f2f24;
-    font-weight: bold;
+    display: inline-block;
+    background-color: #0f2f24;
+    color: white;
     text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* CONTACT */
+.project-card a:hover {
+    background-color: #214d3a;
+}
+
+/* =======================
+   CONTACT
+======================= */
+
 .contact {
-    padding: 80px 100px;
-    background-color: #ffffff;
+    padding: 90px 100px;
+    background-color: white;
     text-align: center;
 }
 
@@ -212,17 +247,21 @@ nav a:hover {
 .contact-boxes a {
     background-color: #0f2f24;
     color: white;
+    text-decoration: none;
     padding: 15px 35px;
     border-radius: 30px;
-    text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .contact-boxes a:hover {
     background-color: #214d3a;
 }
 
-/* FOOTER */
+/* =======================
+   FOOTER
+======================= */
+
 footer {
     background-color: #0f2f24;
     color: white;
@@ -230,25 +269,16 @@ footer {
     padding: 25px;
 }
 
-/* HANDY */
-@media (max-width: 900px) {
-    header {
-        padding: 0 25px;
-    }
+/* =======================
+   RESPONSIVE
+======================= */
 
-    nav a {
-        margin-left: 12px;
-        font-size: 14px;
-    }
+@media (max-width: 1000px) {
 
     .hero {
         flex-direction: column;
-        padding: 60px 30px;
         text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 45px;
+        padding: 60px 30px;
     }
 
     .hero-card {
@@ -259,26 +289,22 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .about {
+    .about,
+    .projects,
+    .contact {
         padding: 70px 30px;
     }
 
+    .hero h1 {
+        font-size: 48px;
+    }
 
- 
+    header {
+        padding: 0 20px;
+    }
 
-.project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    border-radius: 18px;
-    margin: 20px 0;
-    background-color: #f4efe6;
-}
-
-
-
-
-
-
-
+    nav a {
+        margin-left: 12px;
+        font-size: 14px;
+    }
 }
