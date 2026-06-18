@@ -14,9 +14,7 @@ body {
     color: #18392b;
 }
 
-/* =======================
-   NAVIGATION
-======================= */
+
 
 header {
     height: 80px;
@@ -48,9 +46,7 @@ nav a:hover {
     color: #d8c3a5;
 }
 
-/* =======================
-   HERO
-======================= */
+
 
 .hero {
     min-height: 650px;
@@ -132,9 +128,16 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* =======================
-   ABOUT
-======================= */
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0f2f24;
+}
+
+
 
 .about {
     padding: 90px 160px;
@@ -157,9 +160,7 @@ nav a:hover {
     line-height: 1.8;
 }
 
-/* =======================
-   PROJECTS
-======================= */
+
 
 .projects {
     padding: 90px 100px;
@@ -227,9 +228,7 @@ nav a:hover {
     background-color: #214d3a;
 }
 
-/* =======================
-   CONTACT
-======================= */
+
 
 .contact {
     padding: 90px 100px;
@@ -258,9 +257,7 @@ nav a:hover {
     background-color: #214d3a;
 }
 
-/* =======================
-   FOOTER
-======================= */
+
 
 footer {
     background-color: #0f2f24;
@@ -269,9 +266,7 @@ footer {
     padding: 25px;
 }
 
-/* =======================
-   RESPONSIVE
-======================= */
+
 
 @media (max-width: 1000px) {
 
